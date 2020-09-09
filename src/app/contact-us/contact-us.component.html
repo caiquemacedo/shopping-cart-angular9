@@ -1,0 +1,35 @@
+<h3>Contact Us</h3>
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+
+  <div>
+    <label for="name">
+        Name
+    </label>
+    <input id="name" type="text" formControlName="name">
+  </div>
+
+  <div>
+    <label for="last-name">
+        Last Name
+    </label>
+    <input id="last-name" type="text" formControlName="last_name">
+  </div>
+
+  <div>
+    <label for="email">
+        E-mail
+    </label>
+    <input id="email" type="text" formControlName="email">
+  </div>
+
+  <div>
+    <label for="description">
+        Description
+    </label>
+    <textarea id="description" formControlName="description" rows="6"></textarea>
+  </div>
+
+  <button class="button" type="submit">Send</button>
+
+</form>
